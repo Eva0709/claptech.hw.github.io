@@ -1,0 +1,43 @@
+<html>
+
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<style>
+			img{
+				display:none;
+		</style>
+		
+		<button id = "show">show/hide</button><br>
+		<img src="nightscape.jpg" alt="nightscape"
+		style="width:312px;height:200px;" id="img">
+		
+		<script>
+			$(document).ready(function(){				
+				$("#show").click(function(){
+					$("#img").toggle();
+				});
+			});
+		</script>
+		
+		<script>
+			$(function(){
+				$("#img").click(function(){
+					$("#img").animate({top:"-300"});
+				});	
+				$("#img").click(function(){
+					$("#img").animate({{top:'0'});
+				});
+			});
+		</script>
+		</script>
+		
+<button id="btn1">Animate height</button>
+<button id="btn2">Reset height</button>
+
+
+
+	</body>
+</html>

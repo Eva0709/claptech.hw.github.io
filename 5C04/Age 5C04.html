@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>
+			Age
+		</title>
+		<script type="text/javascript">
+			function a(){
+				var Age = document.getElementById("num").value;
+				if (Age < 18)
+					alert("You are child");
+				else 
+					alert("You are adult");			
+			}
+		</script>
+	</head>
+	
+	<body>
+		<p>How old are you?</p>
+		<form>
+			<input type="text" id="num"></br>
+			<input type="button" value="Enter" onclick="a()">
+		</form>
+	</body>
+	
+</html>

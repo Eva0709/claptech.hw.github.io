@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>
+			jQuery
+		</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+		</script>
+	</head>
+
+	<body>
+
+        <body style="background-color : #ffe6e6;">
+
+		<style>
+			img{
+				display:none;
+		</style>
+		<button id = "show">show / hide</button><br>
+		<img src="https://cdn.dribbble.com/users/291008/screenshots/8709323/media/70451e991b809824c5e5f0d907ccea59.png" alt="nightscape"
+		style="width:312px;height:200px;" id="img">
+
+		<script>
+			$(document).ready(function(){
+				$("#img").hide();
+				$("#show").click(function(){
+					$("#img").toggle();
+				});
+			});
+
+		</script>
+	</body>
+</html>

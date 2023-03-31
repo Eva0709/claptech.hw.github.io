@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>
+			area of triangle
+		</title>
+		<script type="text/javascript">
+			function a(){
+				var h = document.getElementById("h").value;
+				var b = document.getElementById("b").value;
+				if (h==""||b=="")
+					alert("please enter the number");
+				else
+					alert(h*b/2);
+			}
+		</script>
+	</head>
+	
+	<body>
+		
+		<form>
+			the height of triangle:<input type="text" id="h"></br>
+			the base of triangle:<input type="text" id="b"></br>
+			<input type="button" value="Enter" onclick="a()">
+			
+		</form>
+	</body>
+	
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#b1").click(function(){
+    $("#p1").toggle();
+  });
+});
+
+$(document).ready(function(){
+  $("#b2").click(function(){
+    $("#p2").toggle();
+  });
+});
+
+$(document).ready(function(){
+  $("#img1").dblclick(function(){
+    $("#img1").slideUp(2000).slideDown(2000);
+  });
+});
+
+$(document).ready(function(){
+  $("#img2").dblclick(function(){
+    $("#img2").animate({left: '350px'});
+  });
+});
+
+
+
+
+</script>
+</head>
+
+<body>
+
+<button id="b1">hide and show the image</button>
+
+<p id="p1">This is a cat.
+<br>
+<img id="img1" src="cat.jpg" alt="Cat" width="400" height="400">
+</p>
+
+<br>
+<br>
+<button id="b2">hide and show the image</button>
+
+<p id="p2">This is a puppy.
+<br>
+<img id="img2" style="position:relative;"src="puppy.jpg" alt="Dog" width="640" height="480">
+</p>
+
+</body>
+</html>

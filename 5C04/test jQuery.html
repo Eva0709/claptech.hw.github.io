@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	</script>
+
+	<script>
+	$(document).ready(function(){
+		$("#img1").mouseenter(function(){
+			$("#img1").fadeOut("slow");
+			$("#img2").fadeIn("slow");
+		});
+		$("#img2").mouseleave(function(){
+			$("#img2").fadeOut("slow");
+			$("#img1").fadeIn("slow");
+		});
+	});
+
+	$(document).ready(function(){
+		$("#img3").dblclick(function(){
+			$("#img3").animate({
+			left: '600px',
+			height: '300px',
+			width: '525px'
+			});
+		});
+		$("#img3").dblclick(function(){
+			$("#img3").animate({
+			left: '380px',
+			height: '200',
+			width: '350'
+			});
+			});
+
+	});
+	</script>
+	
+</head>
+
+<body>
+<img id="img3" style="position: absolute;" src="cat.jpg" width="350" height="200" left: 380px; height: 200px; width: 350px;">
+</body>
+	
+</html>
